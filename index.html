@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yogi — Yoga Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- PAGE CURTAIN -->
+<div id="page-curtain"></div>
+
+<!-- FLOATING ORBS -->
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- SCROLL TO TOP -->
+<button id="scrollTop" aria-label="Back to top">↑</button>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#home" class="nav-logo">
+    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="8" r="4" fill="#779393"/>
+      <path d="M20 14 C10 14 6 22 6 28 L14 28 C14 22 17 20 20 20 C23 20 26 22 26 28 L34 28 C34 22 30 14 20 14Z" fill="#779393" opacity="0.6"/>
+      <path d="M8 28 L6 36 M32 28 L34 36" stroke="#779393" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>
+    Yogi
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#classes">Classes</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#studio">Studio</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#instructors">Instructors</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#pricing" class="btn btn-primary">Get Started</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#home" class="mobile-nav-link">Home</a>
+  <a href="#classes" class="mobile-nav-link">Classes</a>
+  <a href="#schedule" class="mobile-nav-link">Schedule</a>
+  <a href="#studio" class="mobile-nav-link">Studio</a>
+  <a href="#pricing" class="mobile-nav-link">Pricing</a>
+  <a href="#instructors" class="mobile-nav-link">Instructors</a>
+  <a href="#newsletter" class="mobile-nav-link">Newsletter</a>
+  <a href="#pricing" class="btn btn-primary" style="margin-top:1rem;text-align:center;">Get Started</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-overlay"></div>
+  <div class="hero-content" id="heroContent">
+    <h1>Yoga<br>Studio</h1>
+    <p>Find peace, strength and balance through our yoga classes. Suitable for beginners and experienced practitioners alike.</p>
+    <div class="hero-btns">
+      <a href="#pricing" class="btn btn-primary">Get Started</a>
+      <a href="#studio" class="btn btn-outline">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<!-- STYLES SECTION -->
+<section class="section section-center" id="classes">
+  <div class="divider"><div class="divider-line"></div></div>
+  <p class="section-subtitle sr sr-up">Our Offerings</p>
+  <h2 class="section-title sr sr-up sr-d1">Many Styles of Yoga to Suit Everyone</h2>
+  <p class="section-desc sr sr-up sr-d2">From gentle restorative flows to powerful vinyasa, we offer classes for every body and every level.</p>
+
+  <div class="styles-grid">
+    <div class="style-card sr sr-up sr-d1">
+      <div class="style-img-wrap">
+        <img src="https://images.unsplash.com/photo-1545389336-cf090694435e?w=400&auto=format&fit=crop&q=80" alt="Hatha Yoga" class="style-img" />
+      </div>
+      <h3>Hatha Yoga</h3>
+      <p>A gentle introduction to the most basic yoga postures. Perfect for beginners seeking balance.</p>
+    </div>
+    <div class="style-card sr sr-up sr-d2">
+      <div class="style-img-wrap">
+        <img src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=400&auto=format&fit=crop&q=80" alt="Vinyasa Yoga" class="style-img" />
+      </div>
+      <h3>Vinyasa Yoga</h3>
+      <p>A dynamic practice linking breath and movement. Build heat, strength and flexibility.</p>
+    </div>
+    <div class="style-card sr sr-up sr-d3">
+      <div class="style-img-wrap">
+        <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=400&auto=format&fit=crop&q=80" alt="Vinyasa Flow" class="style-img" />
+      </div>
+      <h3>Vinyasa Flow</h3>
+      <p>Flow from pose to pose in a continuous sequence. Perfect for those who love movement.</p>
+    </div>
+    <div class="style-card sr sr-up sr-d4">
+      <div class="style-img-wrap">
+        <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=400&auto=format&fit=crop&q=80" alt="Mullo Yoga" class="style-img" />
+      </div>
+      <h3>Mullo Yoga</h3>
+      <p>Focus on grounding poses that connect you to the earth. Develop a strong foundation.</p>
+    </div>
+    <div class="style-card sr sr-up sr-d5">
+      <div class="style-img-wrap">
+        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&auto=format&fit=crop&q=80" alt="Restorative Yoga" class="style-img" />
+      </div>
+      <h3>Restorative Yoga</h3>
+      <p>Creative sequences with fluid transitions. Express yourself through mindful movement.</p>
+    </div>
+    <div class="style-card sr sr-up sr-d6">
+      <div class="style-img-wrap">
+        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&auto=format&fit=crop&q=80" alt="Yin Yoga" class="style-img" />
+      </div>
+      <h3>Yin Yoga</h3>
+      <p>Long held poses combined with breathwork. Release tension and find deep calm.</p>
+    </div>
+  </div>
+  <div>
+    <a href="#popular" class="btn-more">View More →</a>
+  </div>
+</section>
+
+<!-- TODAY'S SCHEDULE SECTION -->
+<section class="schedule-section" id="schedule">
+  <div class="schedule-left">
+    <div class="schedule-label sr sr-left">Join Us Today</div>
+    <h2 class="sr sr-left sr-d1">Today's Live<br>Class Schedule</h2>
+    <p>Drop in anytime. All classes are beginner-friendly unless marked Advanced. Book your spot online or walk in.</p>
+    <a href="#schedule" class="btn btn-primary" style="margin-top:1.5rem; display:inline-block;">Book a Class</a>
+
+    <div class="schedule-photo-wrap">
+      <img
+        src="https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?w=600&auto=format&fit=crop&q=80"
+        alt="Yoga meditation class"
+        class="schedule-photo"
+      />
+    </div>
+  </div>
+
+  <div class="schedule-right">
+    <div class="schedule-list" id="scheduleList">
+      <!-- populated by JS -->
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about-section" id="studio">
+  <div class="about-left sr sr-left">
+    <div class="about-label">About Us</div>
+    <h2>Best Yoga<br>Studio in your<br>City</h2>
+    <div class="about-label" style="margin-top:1.2rem; font-size:0.75rem;">
+      <span style="width:30px;height:1px;background:var(--color-1);display:block"></span>
+      ★★★★★ Rated 5.0 by our students
+    </div>
+    <a href="#studio" class="btn btn-primary about-btn">Find Out More</a>
+  </div>
+  <div class="about-right sr sr-right">
+    <p>Our studio was founded with a simple belief: yoga should be accessible, inclusive, and transformative for everyone. Whether you're stepping onto the mat for the first time or deepening a lifelong practice, you belong here.</p>
+    <p>We offer over 30 classes per week across all styles and levels. Our certified instructors bring warmth, expertise and genuine care to every session. We create a space where you can leave the outside world behind and reconnect with yourself.</p>
+    <p>From sunrise flows to evening restorative sessions, our schedule is designed to fit your life. Join our community and discover what's possible when mind, body and breath align.</p>
+    <div class="about-number">
+      <div class="about-number-item">
+        <div class="num">12+</div>
+        <div class="num-label">Years Experience</div>
+      </div>
+      <div class="about-number-item">
+        <div class="num">2400+</div>
+        <div class="num-label">Happy Students</div>
+      </div>
+      <div class="about-number-item">
+        <div class="num">30+</div>
+        <div class="num-label">Weekly Classes</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section" id="pricing">
+  <div class="divider"><div class="divider-line"></div></div>
+  <p class="section-subtitle sr sr-up">Our Plans</p>
+  <h2 class="section-title sr sr-up sr-d1">Straight-Forward Pricing</h2>
+  <p class="section-desc sr sr-up sr-d2">Simple, transparent pricing with no hidden fees. Choose the plan that works for you.</p>
+
+  <div class="pricing-grid">
+    <div class="price-card sr sr-up sr-d1">
+      <div class="price-icon">🌿</div>
+      <div class="price-label">One Week</div>
+      <div class="price-amount"><sup>$</sup>7</div>
+      <div class="price-period">per week</div>
+      <ul class="price-features">
+        <li>Access to all classes</li>
+        <li>1 guest pass</li>
+        <li>Online resources</li>
+        <li>Community access</li>
+      </ul>
+      <button class="btn-price">Buy Now</button>
+    </div>
+    <div class="price-card featured sr sr-scale sr-d2">
+      <div class="price-icon">🧘</div>
+      <div class="price-label">Monthly</div>
+      <div class="price-amount"><sup>$</sup>50</div>
+      <div class="price-period">per month</div>
+      <ul class="price-features">
+        <li>Unlimited classes</li>
+        <li>3 guest passes</li>
+        <li>Priority booking</li>
+        <li>Private session discount</li>
+        <li>Online library access</li>
+      </ul>
+      <button class="btn-price">Buy Now</button>
+    </div>
+    <div class="price-card sr sr-up sr-d3">
+      <div class="price-icon">⭐</div>
+      <div class="price-label">Yearly</div>
+      <div class="price-amount"><sup>$</sup>99</div>
+      <div class="price-period">per year</div>
+      <ul class="price-features">
+        <li>Everything in Monthly</li>
+        <li>Unlimited guest passes</li>
+        <li>2 free private sessions</li>
+        <li>Exclusive workshops</li>
+      </ul>
+      <button class="btn-price">Buy Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- CLASSES -->
+<section class="classes-section" id="popular">
+  <div class="classes-header">
+    <h2>Popular Classes</h2>
+    <a href="#classes" class="btn btn-outline" style="font-size:0.8rem; padding:8px 20px;">View All Classes</a>
+  </div>
+  <div class="classes-grid">
+    <div class="class-card sr sr-up sr-d1">
+      <div class="class-thumb">
+        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&auto=format&fit=crop&q=80" alt="Vinyasa for Vitality" class="class-img" />
+      </div>
+      <div class="class-body">
+        <h3>Vinyasa for Vitality</h3>
+        <p>Build strength and energy with this flowing vinyasa sequence. Great for all levels.</p>
+        <a href="#schedule" class="class-link">read more →</a>
+      </div>
+    </div>
+    <div class="class-card sr sr-up sr-d2">
+      <div class="class-thumb">
+        <img src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=600&auto=format&fit=crop&q=80" alt="Foundation in Flow" class="class-img" />
+      </div>
+      <div class="class-body">
+        <h3>Foundation in Flow</h3>
+        <p>Perfect for beginners who want to establish strong foundational yoga skills.</p>
+        <a href="#schedule" class="class-link">read more →</a>
+      </div>
+    </div>
+    <div class="class-card sr sr-up sr-d3">
+      <div class="class-thumb">
+        <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=600&auto=format&fit=crop&q=80" alt="Rise and Shine" class="class-img" />
+      </div>
+      <div class="class-body">
+        <h3>Rise & Shine</h3>
+        <p>Start your morning with an energising sequence to awaken body and mind.</p>
+        <a href="#schedule" class="class-link">read more →</a>
+      </div>
+    </div>
+    <div class="class-card sr sr-up sr-d4">
+      <div class="class-thumb">
+        <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=600&auto=format&fit=crop&q=80" alt="Bend and Stretch" class="class-img" />
+      </div>
+      <div class="class-body">
+        <h3>Bend & Stretch</h3>
+        <p>A deep stretching class focused on increasing flexibility and releasing tension.</p>
+        <a href="#schedule" class="class-link">read more →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+  <div class="cta-bg-circle"></div>
+  <div class="cta-figure">
+    <div class="cta-figure-bg">
+      <img
+        src="https://images.unsplash.com/photo-1588286840104-8957b019727f?w=700&auto=format&fit=crop&q=80"
+        alt="Yoga instructor in practice"
+        class="cta-photo"
+      />
+    </div>
+  </div>
+  <div class="cta-content sr sr-right">
+    <h2>The Best Yoga Studio</h2>
+    <p>Join thousands of students who have transformed their lives through our expert-led classes. Your journey to wellness starts here. We offer something for everyone — beginners welcome.</p>
+    <a href="#studio" class="btn-white">Find Out More</a>
+  </div>
+</section>
+
+<!-- INSTRUCTORS -->
+<section class="instructors-section" id="instructors">
+  <div class="divider"><div class="divider-line"></div></div>
+  <p class="section-subtitle sr sr-up">Meet the Team</p>
+  <h2 class="section-title sr sr-up sr-d1">Yoga Instructors</h2>
+  <p class="section-desc sr sr-up sr-d2">Our certified instructors bring years of experience, warmth, and expertise to every class.</p>
+
+  <div class="instructors-grid">
+    <div class="instructor-card sr sr-up sr-d1">
+      <div class="instructor-photo">
+        <img src="https://images.unsplash.com/photo-1588286840104-8957b019727f?w=600&auto=format&fit=crop&q=80" alt="Andrea Murphy" class="instructor-img" />
+      </div>
+      <h3>Andrea Murphy</h3>
+      <div class="role">Senior Instructor</div>
+      <div class="instructor-social">
+        <div class="social-dot">f</div>
+        <div class="social-dot">t</div>
+        <div class="social-dot">in</div>
+      </div>
+    </div>
+    <div class="instructor-card sr sr-up sr-d2">
+      <div class="instructor-photo">
+        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&auto=format&fit=crop&q=80" alt="Savannah Carpenter" class="instructor-img" />
+      </div>
+      <h3>Savannah Carpenter</h3>
+      <div class="role">Vinyasa Specialist</div>
+      <div class="instructor-social">
+        <div class="social-dot">f</div>
+        <div class="social-dot">t</div>
+        <div class="social-dot">in</div>
+      </div>
+    </div>
+    <div class="instructor-card sr sr-up sr-d3">
+      <div class="instructor-photo">
+        <img src="https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=600&auto=format&fit=crop&q=80" alt="McKenzie Nash" class="instructor-img" />
+      </div>
+      <h3>McKenzie Nash</h3>
+      <div class="role">Hatha & Meditation</div>
+      <div class="instructor-social">
+        <div class="social-dot">f</div>
+        <div class="social-dot">t</div>
+        <div class="social-dot">in</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section" id="newsletter">
+  <h2 class="sr sr-up">Subscribe to Our Newsletter</h2>
+  <p class="sr sr-up sr-d1">Stay updated with our latest classes, workshops, wellness tips and exclusive offers delivered straight to your inbox.</p>
+  <form class="newsletter-form" id="newsletterForm">
+    <input type="email" id="newsletterEmail" placeholder="Enter your email address" autocomplete="email" required>
+    <button type="submit" id="newsletterBtn">Subscribe</button>
+  </form>
+  <!-- Confirmation message (hidden until subscribed) -->
+  <div class="newsletter-confirm" id="newsletterConfirm">
+    <div class="confirm-icon">🧘</div>
+    <h3>You're in! Welcome to Yogi.</h3>
+    <p id="confirmMsg"></p>
+    <div class="confirm-perks">
+      <div class="perk-item">🗓️ <span>Weekly class schedules straight to your inbox</span></div>
+      <div class="perk-item">💫 <span>Exclusive wellness tips from our instructors</span></div>
+      <div class="perk-item">🎁 <span>Early access to workshops &amp; retreats</span></div>
+      <div class="perk-item">🌿 <span>Special subscriber discounts</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo">
+        <svg width="26" height="26" viewBox="0 0 40 40" fill="none">
+          <circle cx="20" cy="8" r="4" fill="#779393"/>
+          <path d="M20 14 C10 14 6 22 6 28 L14 28 C14 22 17 20 20 20 C23 20 26 22 26 28 L34 28 C34 22 30 14 20 14Z" fill="#779393" opacity="0.7"/>
+          <path d="M8 28 L6 36 M32 28 L34 36" stroke="#779393" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        Yogi
+      </div>
+      <p>A sanctuary for body, mind and spirit. We welcome yogis of all levels and backgrounds to our growing community.</p>
+      <div class="footer-social" style="margin-top:1.2rem">
+        <a href="https://facebook.com" target="_blank" rel="noopener">fb</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener">tw</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener">ig</a>
+        <a href="https://youtube.com" target="_blank" rel="noopener">yt</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Studio Yoga</h4>
+      <ul>
+        <li><a href="#classes">Hatha Yoga</a></li>
+        <li><a href="#classes">Vinyasa Flow</a></li>
+        <li><a href="#classes">Restorative</a></li>
+        <li><a href="#schedule">Meditation</a></li>
+        <li><a href="#classes">Hot Yoga</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Movement</h4>
+      <ul>
+        <li><a href="#classes">Pilates</a></li>
+        <li><a href="#classes">Barre</a></li>
+        <li><a href="#classes">Stretching</a></li>
+        <li><a href="#schedule">Breathwork</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Yoga Studios</h4>
+      <ul>
+        <li><a href="#studio">Find a Studio</a></li>
+        <li><a href="#schedule">Book a Class</a></li>
+        <li><a href="#schedule">Workshops</a></li>
+        <li><a href="#studio">Retreats</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <ul>
+        <li><a href="https://maps.google.com/?q=123+Zen+Street" target="_blank" rel="noopener">123 Zen Street</a></li>
+        <li><a href="tel:+15552345678">+1 (555) 234-5678</a></li>
+        <li><a href="/cdn-cgi/l/email-protection#7a121f1616153a03151d13090e0f1e131554191517"><span class="__cf_email__" data-cfemail="731b161f1f1c330a1c141a000706171a1c5d101c1e">[email&#160;protected]</span></a></li>
+        <li><span>Mon–Sat 6am–9pm</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Yogi. All rights reserved.</span>
+    <span><a href="#home" style="color:rgba(255,255,255,0.3);text-decoration:none;">Privacy Policy</a> · <a href="#home" style="color:rgba(255,255,255,0.3);text-decoration:none;">Terms of Service</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
